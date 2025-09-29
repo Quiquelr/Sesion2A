@@ -61,5 +61,13 @@ class calculadoraTest {
 		
 		assertEquals(valorEsperado, valorReal);
 	}
+	
+	@Test
+	void testDividePor0() {
+		int valorEsperado = -1; 
+		int valorReal = calculadora.suma(4, 0);
+		
+		assertEquals(valorEsperado, valorReal);
+	}	
 
 }
